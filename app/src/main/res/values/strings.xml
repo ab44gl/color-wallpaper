@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">color wallpaper</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="color">Color</string>
+    <string name="save_png">Save PNG</string>
+    <string name="set_wallpaper">Set Wallpaper</string>
+    <string name="more">more</string>
+</resources>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColorDialogFragment">
+
+    <com.abhishek.colorwallpaper.ColorView
+        android:id="@+id/colorView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="R"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBarRed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekBarRed" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="G"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBarGreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarRed" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="10dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="8dp"
+        android:text="B"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBarBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarGreen" />
+
+    <SeekBar
+        android:id="@+id/seekBarRed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:max="255"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarGreen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+    <SeekBar
+        android:id="@+id/seekBarGreen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:max="255"
+        app:layout_constraintBottom_toTopOf="@+id/seekBarBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+    <SeekBar
+        android:id="@+id/seekBarBlue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:max="255"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/buttonOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonOk"
+        app:layout_constraintEnd_toStartOf="@+id/buttonOk"
+        app:layout_constraintTop_toTopOf="@+id/buttonOk" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
